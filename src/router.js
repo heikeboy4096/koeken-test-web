@@ -3,12 +3,14 @@ import Router from "vue-router";
 import AppHeader from "./layout/AppHeader";
 import AppFooter from "./layout/AppFooter";
 import Home from "./views/Home.vue";
-import Landing from "./views/Landing.vue";
-import Login from "./views/Login.vue";
-import Register from "./views/Register.vue";
-import Profile from "./views/Profile.vue";
-
+//import Landing from "./views/Landing.vue";
+//import Login from "./views/Login.vue";
+//import Register from "./views/Register.vue";
+//import Profile from "./views/Profile.vue";
 import About from "./views/About.vue";
+import Events from "./views/Events.vue";
+import Activity from "./views/Activity.vue";
+import Newcomers from "./views/Newcomers.vue";
 
 Vue.use(Router);
 
@@ -18,7 +20,7 @@ export default new Router({
   routes: [
     {
       path: "/",
-      name: "components",
+      name: "home",
       components: {
         header: AppHeader,
         default: Home,
@@ -35,38 +37,29 @@ export default new Router({
       }
     },
     {
-      path: "/landing",
-      name: "landing",
+      path: "/events",
+      name: "Events",
       components: {
         header: AppHeader,
-        default: Landing,
+        default: Events,
         footer: AppFooter
       }
     },
     {
-      path: "/login",
-      name: "login",
+      path: "/activity",
+      name: "Activity",
       components: {
         header: AppHeader,
-        default: Login,
+        default: Activity,
         footer: AppFooter
       }
     },
     {
-      path: "/register",
-      name: "register",
+      path: "/newcomers",
+      name: "Newcomers",
       components: {
         header: AppHeader,
-        default: Register,
-        footer: AppFooter
-      }
-    },
-    {
-      path: "/profile",
-      name: "profile",
-      components: {
-        header: AppHeader,
-        default: Profile,
+        default: Newcomers,
         footer: AppFooter
       }
     }

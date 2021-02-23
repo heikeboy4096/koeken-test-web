@@ -7,9 +7,9 @@
 
             <div class="row" slot="content-header" slot-scope="{closeMenu}">
                 <div class="col-6 collapse-brand">
-                    <a href="">
+                    <router-link to="/" >
                         <img src="img/brand/koeken_logo.png">
-                    </a>
+                    </router-link>
                 </div>
                 <div class="col-6 collapse-close">
                     <close-button @click="closeMenu"></close-button>
@@ -32,7 +32,7 @@
                                 <p class="description d-none d-md-inline-block mb-0">こえけん！アニメ声優研究会の活動について</p>
                             </div>
                         </router-link>
-                        <router-link to="/event" class="media d-flex align-items-center">
+                        <router-link to="/events" class="media d-flex align-items-center">
                             <div class="icon icon-shape bg-gradient-warning rounded-circle text-white">
                                 <i class="fa fa-child"></i>
                             </div>
