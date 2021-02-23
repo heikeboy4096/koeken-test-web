@@ -13,7 +13,7 @@
                 <div class="col-lg-5 mb-5 mb-lg-0">
                     <h1 class="text-info font-weight-light">声優さんをお呼びしてイベントを開催！</h1>
                     <p class="lead text-white mt-4">こえけん！アニメ声優研究会では有名な声優さんを三田祭や矢上祭などの学園祭にお呼びしてトークショー等を開催しています！</p>
-                    <a href="https://demos.creative-tim.com/argon-design-system/docs/components/alerts.html"
+                    <a href="/event"
                        class="btn btn-white mt-4">イベントを見る</a>
                 </div>
                 <div class="col-lg-6">

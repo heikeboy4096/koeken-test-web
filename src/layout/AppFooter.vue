@@ -15,7 +15,7 @@
                 <div class="col-md-6">
                     <ul class="nav nav-footer justify-content-end">
                         <li class="nav-item">
-                            <a href="http://blog.creative-tim.com" class="nav-link" target="_blank" rel="noopener">Blog</a>
+                            <a href="https://www.keiokoeken.com/blog/" class="nav-link" target="_blank" rel="noopener">Blog</a>
                         </li>
                     </ul>
                 </div>
