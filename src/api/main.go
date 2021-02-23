@@ -4,15 +4,23 @@ import (
   "net/http"
   "fmt"
   "log"
+  "context"
   "github.com/go-playground/validator"
   "encoding/json"
   "net/url"
+  "github.com/aws/aws-lambda-go/lambda"
 )
 
 type Form struct {
   Name string `validate:"required"`
   Email string `validate:"required,email"`
   Text string `validate:"required"`
+}
+
+type Formlambda struct {
+  Name string `json:"name"`
+  Email string `json:"email"`
+  Text string `json:"text"`
 }
 
 type slackPayload struct {
@@ -22,7 +30,7 @@ type slackPayload struct {
   Icon string `json:"icon_emoji"`
 }
 
-var webhookURL string = "https://hooks.slack.com/services/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"
+var webhookURL string = "{slack WebHook URL}"
 
 func SendtoSlack(formParams *Form) (err error) {
   
@@ -82,6 +90,7 @@ func userValidate(formParams *Form) map[string]string {
   return errorMessages
 }
 
+/*
 func contactFormHandler(w http.ResponseWriter, r *http.Request) {
 
   //CORS
@@ -125,8 +134,19 @@ func contactFormHandler(w http.ResponseWriter, r *http.Request) {
     fmt.Println("Not Supported!")
   }
 }
+*/
+
+func contactFormHandlerForLambda(ctx context.Context, r Formlambda) {
+
+  SendtoSlack(formParams)
+}
 
 func main() {
-  http.HandleFunc("/api/contactForm", contactFormHandler)
-  http.ListenAndServe(":8081", nil)
+
+  /* For AWS Lambda */
+  lambda.Start(contactFormHandlerForLambda)
+
+  /* For server */
+  //http.HandleFunc("/api/contactForm", contactFormHandler)
+  //http.ListenAndServe(":8081", nil)
 }
