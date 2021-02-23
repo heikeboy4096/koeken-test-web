@@ -11,7 +11,7 @@
         <div class="container my-5 pb-5 pb-lg">
             <div class="row justify-content-between align-items-center">
                 <div class="col-lg-5 mb-5 mb-lg-0">
-                    <h1 class="text-info font-weight-light">声優さんをお呼びしてイベントを開催！</h1>
+                    <h2 class="text-info font-weight-light">声優さんを呼んでイベントを開催！</h2>
                     <p class="lead text-white mt-4">こえけん！アニメ声優研究会では有名な声優さんを三田祭や矢上祭などの学園祭にお呼びしてトークショー等を開催しています！</p>
                     <router-link to="/events"> 
                     <div class="btn btn-white mt-4">

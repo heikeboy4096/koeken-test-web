@@ -2,6 +2,7 @@
     <div>
         <hero></hero>
         <carousel></carousel>
+        <Tweets></Tweets>
         <Media></Media>
         <ContactForm></ContactForm>
         <!--  below is template components
@@ -22,6 +23,7 @@ import Hero from "./components/Hero";
 import Carousel from "./components/Carousel";
 import ContactForm from "./components/ContactForm";
 import Media from "./components/Media";
+import Tweets from "./components/Tweets";
 
 export default {
   name: "components",
@@ -29,6 +31,7 @@ export default {
     Hero,
     Carousel,
     //added by me
+    Tweets,
     ContactForm,
     Media,
   }

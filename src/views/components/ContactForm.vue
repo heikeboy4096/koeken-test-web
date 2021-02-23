@@ -1,7 +1,7 @@
 <template>
     <section id="contact" class="section pb-0 section-components bg-info">
         <form v-on:submit.prevent="postContactInfo">
-            <div class="container mb-5">
+            <div class="container mb-5 pt-5">
                 <!-- Inputs -->
                 <h3 class="h2 text-body font-weight-bold mb-4">お問い合わせフォーム</h3>
                 <p>サークル員が対応いたします。</p>

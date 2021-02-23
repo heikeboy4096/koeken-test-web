@@ -7,9 +7,9 @@
 
             <div class="row" slot="content-header" slot-scope="{closeMenu}">
                 <div class="col-6 collapse-brand">
-                    <router-link to="/" >
+                    <a href="">
                         <img src="img/brand/koeken_logo.png">
-                    </router-link>
+                    </a>
                 </div>
                 <div class="col-6 collapse-close">
                     <close-button @click="closeMenu"></close-button>
@@ -79,7 +79,7 @@
                     </a>
                 </li>
                 <li class="nav-item d-none d-lg-block ml-lg-4">
-                    <a href="#contact"
+                    <a href="/#contact"
                        class="btn btn-neutral btn-icon">
                 <span class="btn-inner--icon">
                   <i class="fa fa-envelope-o mr-2"></i>
